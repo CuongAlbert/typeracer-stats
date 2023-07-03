@@ -3,6 +3,7 @@ import { Image, Stack, XStack, YStack, Text } from 'tamagui'
 
 import { BsBraces } from 'react-icons/bs'
 import RankBoard from './RankBoard'
+import Tesing from './Testing'
 
 export default function HomeContent() {
   return (
@@ -20,6 +21,7 @@ export default function HomeContent() {
       </Text>
 
       <RankBoard />
+      <Tesing />
     </Stack>
   )
 }

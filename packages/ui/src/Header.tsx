@@ -9,7 +9,7 @@ export default function Header() {
       w={'100%'}
       h={60}
       bg={'#1D212C'}
-      position="fixed"
+      position="absolute"
       t={0}
       zIndex={40}
       px={25}
