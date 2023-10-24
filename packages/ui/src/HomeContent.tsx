@@ -2,7 +2,6 @@ import React from 'react'
 import { Image, Stack, XStack, YStack, Text } from 'tamagui'
 
 import { BsBraces } from 'react-icons/bs'
-import RankBoard from './RankBoard'
 import Testing from './Testing'
 
 export default function HomeContent() {
