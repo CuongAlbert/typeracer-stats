@@ -15,7 +15,6 @@ import {
 import Header from '@my/ui/src/Header'
 import HomeContent from '@my/ui/src/HomeContent'
 import SideBar from '@my/ui/src/SideBar'
-import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
 import React, { useState } from 'react'
 import { useLink } from 'solito/link'
 

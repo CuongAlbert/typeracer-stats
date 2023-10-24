@@ -28,20 +28,20 @@ export function Example() {
         mt={20}
         display="flex"
         bc="#1D212C"
-        py="$2"
-        px="$1"
+        py="$4"
+        px="$3"
         borderTopLeftRadius={10}
         borderTopRightRadius={10}
       >
-        {Object.keys(data[0]).map((key) => (
-          <XStack w="10%">
+        {Object.keys(data[0]).map((key, idx) => (
+          <XStack w="33%" key={idx}>
             <Text fontSize={12} color="#6C707A" textOverflow="break-word" alignItems="center">
-              {key}
+              {key.toUpperCase()}
             </Text>
           </XStack>
         ))}
       </XStack>
-      {data.map((c) => (
+      {data.map((c, idx) => (
         <XStack
           w="100%"
           display="flex"
@@ -52,10 +52,17 @@ export function Example() {
           borderTopRightRadius={10}
           borderBottomWidth={1}
           borderBottomColor={'#1D212C'}
+          key={idx}
         >
-          {Object.values(c).map((v) => (
-            <XStack w="11%" display="flex">
-              <Text fontSize={10} color="#6C707A" textOverflow="break-word" alignItems="center">
+          {Object.values(c).map((v, idx) => (
+            <XStack w="33%" display="flex" key={idx}>
+              <Text
+                fontSize={12}
+                color="#6C707A"
+                textOverflow="break-word"
+                alignItems="center"
+                justifyContent="center"
+              >
                 {v}
               </Text>
             </XStack>
