@@ -11,7 +11,7 @@ export default function SideBar() {
             <BsBraces color="#257CDC" size={12} />
           </XStack>
           <Text fontSize={12} fontWeight="500" color="white" ml="$2">
-            Typeracer
+            Leetcode Contest
           </Text>
         </XStack>
         <Text fontSize={12} fontWeight="500" color="#6C707A" ml="$6" mt="$3">

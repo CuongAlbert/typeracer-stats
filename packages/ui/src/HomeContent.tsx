@@ -3,7 +3,7 @@ import { Image, Stack, XStack, YStack, Text } from 'tamagui'
 
 import { BsBraces } from 'react-icons/bs'
 import RankBoard from './RankBoard'
-import Tesing from './Testing'
+import Testing from './Testing'
 
 export default function HomeContent() {
   return (
@@ -13,15 +13,14 @@ export default function HomeContent() {
           <BsBraces color="#257CDC" size={70} />
         </XStack>
         <Text fontSize={30} fontWeight="bold" color="white" ml="$2">
-          Typeracer
+          Leetcode Contest
         </Text>
       </XStack>
       <Text fontSize={20} fontWeight="semibold" color="#6C707A" mt="$2" ml="$8">
         LeaderBoard
       </Text>
 
-      <RankBoard />
-      <Tesing />
+      <Testing />
     </Stack>
   )
 }
