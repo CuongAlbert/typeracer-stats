@@ -1,24 +1,11 @@
-import {
-  Anchor,
-  Button,
-  config,
-  H1,
-  Paragraph,
-  Separator,
-  Sheet,
-  Stack,
-  TamaguiProvider,
-  useToastController,
-  XStack,
-  YStack,
-} from '@my/ui'
+import { config, Stack, TamaguiProvider, XStack } from '@my/ui'
 import Header from '@my/ui/src/Header'
 import HomeContent from '@my/ui/src/HomeContent'
 import SideBar from '@my/ui/src/SideBar'
 import React, { useState } from 'react'
 import { useLink } from 'solito/link'
 
-export function HomeScreen() {
+export function HomeScreen(props: { url: string }) {
   const linkProps = useLink({
     href: '/user/nate',
   })
@@ -30,7 +17,7 @@ export function HomeScreen() {
         <XStack display="flex">
           <SideBar />
           <Stack w="100%" pl={220} bg={'#13161E'}>
-            <HomeContent />
+            <HomeContent url={props.url} />
           </Stack>
         </XStack>
       </Stack>

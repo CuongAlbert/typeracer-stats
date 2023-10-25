@@ -4,7 +4,7 @@ import { Image, Stack, XStack, YStack, Text } from 'tamagui'
 import { BsBraces } from 'react-icons/bs'
 import Testing from './Testing'
 
-export default function HomeContent() {
+export default function HomeContent(props: { url: string }) {
   return (
     <Stack maxWidth={1024} marginHorizontal="auto" pt="60px" w="100%" h="100vh">
       <XStack w="100%" mt={30} ai={'center'}>
@@ -19,7 +19,7 @@ export default function HomeContent() {
         LeaderBoard
       </Text>
 
-      <Testing />
+      <Testing url={props.url} />
     </Stack>
   )
 }
